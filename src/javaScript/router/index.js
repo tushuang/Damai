@@ -2,7 +2,7 @@
 
 // 实现路由工具
 
-import routes from './route';
+// import routes from './route';
 
 class Router {
 
