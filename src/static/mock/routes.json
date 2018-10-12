@@ -1,0 +1,4 @@
+{
+    "/api/foot/list": "/list",  
+    "/api/foot/list_time": "/list"   
+}
