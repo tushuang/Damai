@@ -1,5 +1,6 @@
 
-  console.log('flexible');
+  
+
   ;(function(win, lib) {
     var doc = win.document;
     var docEl = doc.documentElement; // 根元素
@@ -8,7 +9,7 @@
     var dpr = 0;
     var scale = 0;
     var tid;
-    var flexible = lib.flexible || (lib.flexible = {});  
+    var flexible = lib.flexible || (lib.flexible = {});
     
     if (metaEl) {
         console.warn('将根据已有的meta标签来设置缩放比例');

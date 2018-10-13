@@ -4,7 +4,7 @@ const webpack_config = {
     mode: 'development',
     //production 压缩js文件
     entry:{
-        app:'./src/javaScript/app.js'
+        index:'./src/javaScript/index.js'
     },
     output:{
         filename:'[name].js'

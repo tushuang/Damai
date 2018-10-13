@@ -1,4 +1,3 @@
 {
-    "/api/foot/list": "/list",  
-    "/api/foot/list_time": "/list"   
+    "/api/damai": "/list"
 }

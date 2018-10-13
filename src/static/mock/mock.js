@@ -1,10 +1,10 @@
 
 
 
-const list = require('./foot_list.json');
+const list_img = require('./slideshow_img.json');
 
 module.exports = () => { //没有require 自己找见
     return {
-        list:list
+        list:list_img
     } 
 } 
