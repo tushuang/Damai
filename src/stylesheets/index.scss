@@ -2,8 +2,10 @@
 @import '../static/css/reset';
 @import '../static/fonts/iconfont';
 @import '../static/css/swiper.min';
+
+
 #header{
-    width: 100%;
+    width: 10rem;
     height: 1.333333rem;
     display: flex;
     justify-content: space-around;
@@ -11,6 +13,10 @@
     background: #f5f5f5;
     padding-left: .2rem;
     padding-right: .333333rem;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    // box-sizing: content-box;
     .header-icon__site{
         font-size: .42667rem;
         color: #222;
@@ -47,8 +53,38 @@
         font-size: .64rem;
     }
 }
-
+.more-nav_top{
+    position: fixed;
+    top: 1.333333rem;
+    left: 0;
+    width: 10rem;
+    height: 1.386667rem;
+    z-index: 999;
+    display: none;
+    ul{
+        display:flex;
+        justify-content: space-around;
+        padding-left: .16rem;
+        background: white;
+        li{
+            width: 25%;
+            height: 1.386667rem;
+            text-align: center;
+            line-height: 1.38667rem;
+            font-size: .37333rem;
+            vertical-align: middle;
+            i{
+                vertical-align: middle;
+            }
+        }
+        li:nth-child(3){
+            color: #ff1268;
+        }
+    }
+}
 main{
+    height: 17.786667rem;
+    margin-top: 1.333333rem;
     section.main-slideshow{
         .swiper-container{
             width: 100%;
@@ -189,16 +225,25 @@ main{
             }
         } 
         .more-nav{
+            position: relative;
             ul{
                 display:flex;
                 justify-content: space-around;
                 padding-left: .16rem;
+                background: white;
                 li{
                     width: 25%;
                     height: 1.386667rem;
                     text-align: center;
                     line-height: 1.38667rem;
                     font-size: .37333rem;
+                    vertical-align: middle;
+                    i{
+                        vertical-align: middle;
+                    }
+                }
+                li:nth-child(3){
+                    color: #ff1268;
                 }
             }
         }
