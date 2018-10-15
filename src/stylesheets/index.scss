@@ -53,35 +53,109 @@
         font-size: .64rem;
     }
 }
-.more-nav_top{
+// .more-nav_top{
+//     position: fixed;
+//     top: 1.333333rem;
+//     left: 0;
+//     width: 10rem;
+//     height: 1.386667rem;
+//     z-index: 999;
+//     display: none;
+//     ul{
+//         display:flex;
+//         justify-content: space-around;
+//         padding-left: .16rem;
+//         background: white;
+//         li{
+//             width: 25%;
+//             height: 1.386667rem;
+//             text-align: center;
+//             line-height: 1.38667rem;
+//             font-size: .37333rem;
+//             vertical-align: middle;
+//             i{
+//                 vertical-align: middle;
+//             }
+//         }
+//         li:nth-child(3){
+//             color: #ff1268;
+//         }
+//     }
+// }
+
+.more-nav_top {
     position: fixed;
     top: 1.333333rem;
     left: 0;
     width: 10rem;
     height: 1.386667rem;
     z-index: 999;
-    display: none;
-    ul{
-        display:flex;
-        justify-content: space-around;
-        padding-left: .16rem;
-        background: white;
-        li{
-            width: 25%;
-            height: 1.386667rem;
-            text-align: center;
-            line-height: 1.38667rem;
-            font-size: .37333rem;
-            vertical-align: middle;
-            i{
-                vertical-align: middle;
-            }
-        }
-        li:nth-child(3){
-            color: #ff1268;
-        }
-    }
+    display: none
 }
+
+.more-nav_top ul.more-nav_ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: .16rem;
+    background: white
+}
+
+.more-nav_top ul.more-nav_ul li.more-nav_item {
+    width: 25%;
+    height: 1.386667rem;
+    text-align: center;
+    line-height: 1.38667rem;
+    font-size: .37333rem;
+    vertical-align: middle
+}
+
+.more-nav_top ul.more-nav_ul li.more-nav_item div.list_container {
+    display: none;
+    width: 10rem;
+    position: relative;
+    top: -0.053333rem;
+    left: -0.173333rem;
+    background: rgba(0,0,0,0.65);
+    height: 17.786667rem
+}
+
+.more-nav_top ul.more-nav_ul li.more-nav_item div.list_container div.better-scroll_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.466667rem;
+    overflow: hidden
+}
+
+.more-nav_top ul.more-nav_ul li.more-nav_item div.list_container div.better-scroll_container ul.classity-list,.more-nav_top ul.more-nav_ul li.more-nav_item div.list_container div.better-scroll_container ul.time-list {
+    background: white;
+    width: 100%;
+    opacity: 1
+}
+
+.more-nav_top ul.more-nav_ul li.more-nav_item div.list_container div.better-scroll_container ul.classity-list li,.more-nav_top ul.more-nav_ul li.more-nav_item div.list_container div.better-scroll_container ul.time-list li {
+    opacity: 1;
+    padding-left: .293333rem;
+    height: 1.333333rem;
+    border: .013333rem solid #e7e7e7;
+    line-height: 1.33333rem;
+    font-size: .32rem;
+    text-align: left
+}
+
+.more-nav_top ul.more-nav_ul li.more-nav_item i {
+    vertical-align: middle
+}
+
+.more-nav_top ul.more-nav_ul li.more-nav_item:nth-child(3) {
+    color: #ff1268
+}
+
+.more-nav_top ul.more-nav_ul li.more-nav_item:nth-child(2) div.list_container {
+    left: -2.64rem
+}
+
 main{
     height: 17.786667rem;
     margin-top: 1.333333rem;

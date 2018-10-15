@@ -3,10 +3,10 @@ import  main_slideshow_controller from './main_slideshow_controller';
 import main_nav_controller from './main_nav_controller'
 import main_artist_controller from './main_artist_controller'
 import more_list_controller from './more_list_controller'
-
+import header_controller from './header_controller'
 
 const render = ()=> {
-    $('.content').html(main_template);
+    $('main .content').html(main_template);
     //调用render的渲染函数 
     main_slideshow_controller.render(); 
     main_nav_controller.render();
