@@ -26,6 +26,16 @@ const render = async ()=>{
                 'display':'none'
             })
         }
+
+        if(y<-3000){
+            $('.to-top').css({
+                'display':'block'
+            })
+        }else{
+            $('.to-top').css({
+                'display':'none'
+            })
+        }
     })
     _scroll.on('scrollEnd',({x,y})=>{
         if(y<target_num){
@@ -37,8 +47,20 @@ const render = async ()=>{
                 'display':'none'
             })
           }
+          if(y<-3000){
+            $('.to-top').css({
+                'display':'block'
+            })
+        }else{
+            $('.to-top').css({
+                'display':'none'
+            })
+        }
     })
-
+    $('.to-top').on('tap',function(){
+        console.log(0);
+        $('body,html').scrollTop(0);
+    })
     const scroll_container = $('.better-scroll_container');
     //不能同时初始化两个元素
     const _scroll_nav = new BScroll(scroll_container.get(0),{

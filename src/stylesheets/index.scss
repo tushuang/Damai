@@ -355,3 +355,17 @@ main{
         }
     }
 }
+
+.to-top {
+    i{
+        text-align: center;
+        font-size:1.333333rem!important;
+        opacity: .4;
+    }
+    position: fixed;
+    right: .48rem;
+    bottom: .66667rem;
+    width: 1.28rem;
+    height: 1.32rem;
+    display: none;
+}
