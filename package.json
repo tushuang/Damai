@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@babel/runtime": "^7.1.2",
     "better-scroll": "^1.13.2",
     "global": "^4.3.2",
     "gulp": "^3.9.1",

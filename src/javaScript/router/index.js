@@ -2,13 +2,13 @@
 
 // 实现路由工具
 
-// import routes from './route';
+import routes from './route';
 
 class Router {
 
     constructor({initial}){
         this.routes = routes,
-        this.initial = initial  || '#/content'
+        this.initial = initial  || '#/index'
     }
     init(){
         this.initialHash();
@@ -27,24 +27,24 @@ class Router {
             this.routes[this.initial].render();
         }
         this.routes[hash].render();
-        this.switchStyle();
+        // this.switchStyle();
     }
 
     switchHash(hash){
         location.hash = hash;
     }
-    //根据地址栏来渲染底部图标的颜色
-    switchStyle(){
-        $('#footer span').each(function(){
-            let hash = $(this).attr('hash')
-            if ( hash == location.hash){
-                $(this).addClass('tap');
-            }else{
-                $(this).removeClass('tap');
-            }
+    // //根据地址栏来渲染底部图标的颜色
+    // switchStyle(){
+    //     $('#footer span').each(function(){
+    //         let hash = $(this).attr('hash')
+    //         if ( hash == location.hash){
+    //             $(this).addClass('tap');
+    //         }else{
+    //             $(this).removeClass('tap');
+    //         }
 
-        })
-    }
+    //     })
+    // }
 
     // 监听hash的变化
     listenrHash () {
