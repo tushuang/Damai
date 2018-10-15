@@ -1,7 +1,104 @@
-@import "../static/css/reset";
-@import "../static/fonts/iconfont";
 
+a{
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+}
 .Login-header{
-    width: 5rem;
-    height: 1.633333rem;
+    width: 10rem;
+    height: 3.333333rem;
+}
+.Login-header-img{
+    text-align: center;
+}
+.Login-header-img img{
+    width: 2.666667rem;
+    height: 1.2rem;
+    margin-top: 1.026667rem;
+}
+.Login-main{
+    height: 5.36rem;
+    padding:0 .533333rem .533333rem;
+}
+.Login-main-phone{
+    height: 1.12rem;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    line-height: 1.093333rem;
+}
+.Login-main-phone-left{
+    display: inline-block;
+    width: 1.866667rem;
+    padding-left: .266667rem;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+}
+.Login-main-phone-left .jiantou-down{
+    font-size: .373333rem;
+}
+.Login-main-phone input{
+    list-style: none;
+    border: none;
+    height: 1.066667rem;
+    width: 6.8rem;
+    font-size: .373333rem;
+    padding-left: .266667rem;
+    outline: none;
+}
+.Login-main-pwd{
+    height: 1.12rem;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    line-height: 1.093333rem;
+}
+.Login-main-pwd input{
+    list-style: none;
+    border: none;
+    height: 1.066667rem;
+    width: 6.8rem;
+    font-size: .373333rem;
+    padding-left: .266667rem;
+    outline: none;
+}
+.Login-mian-btn{
+    width: 8.933333rem;
+    height: 1.173333rem;
+    margin-top: .533333rem;
+    
+    background-color: #ff1268;
+    border-radius: .08rem;
+    background-image: linear-gradient(90deg,#ff4aae,#ff1268);
+    text-align: center;
+    a{
+        color: #fff;
+        line-height: 1.12rem;
+        font-size: .48rem;
+    }
+}
+.Login-main-loginAndReg{
+    position: relative;
+    margin: .213333rem 0rem;
+    font-size: .32rem;
+    a{
+        color: #999;
+    }
+    .Login-main-loginAndReg-left{
+        float: left;
+    }
+    .Login-main-loginAndReg-right{
+        float: right;
+    }
+}
+.login-text-msg{
+    display: none;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    border-radius: .133333rem;
+    // width: 6.666667rem;
+    // height: 1.12rem;
+    line-height: .933333rem;
+    font-size: .32rem;
+    margin: 0rem .106667rem;
 }

@@ -13,9 +13,14 @@
 
 
 import login_controller from "../controllers/login_controllers/login_controller";
-import register_controller from "../controllers/register_controllers/register_controller"
-export default {
-    "#login" : login_controller,
-    "#register" : register_controller,
-    
+import register_controller from "../controllers/register_controllers/register_controller";
+import index_contrller from "../controllers/index_controllers/header_controller";
+const routes = {
+    "#/index" : index_contrller,
+    "#/login" : login_controller,
+    "#/reg" : register_controller,
+}
+
+export  {
+    routes
 }

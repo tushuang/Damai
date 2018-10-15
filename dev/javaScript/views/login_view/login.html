@@ -1,49 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="../../../static/javascript/flexible.js"></script>
-    <script src="../../../static/javascript/handlebars-v4.0.12.js"></script>
-    <script src="../../../static/javascript/zepto.min.js"></script>
-    <link rel="stylesheet" href="../../../stylesheets/login.scss">
-    <title>Login</title>
-</head>
-<body>
+
+
     <header class="Login-header">
         <div class="Login-header-img">
-            <a>
-                <img src="//gw.alicdn.com/tfs/TB1bx8NXlfH8KJjy1XbXXbLdXXa-300-138.png">
-            </a>
+                <a href="#/login">
+                    <img src="//gw.alicdn.com/tfs/TB1bx8NXlfH8KJjy1XbXXbLdXXa-300-138.png">
+                </a>
         </div>
     </header>
     <section class="Login-main">
         <div class="Login-main-phone">
             <div class="Login-main-phone-left">
                 +86
-                <i class=""></i>
+                <i class="iconfont icon-jiantouxia jiantou-down"></i>
             </div>
-            <div class="Login-main-phone-right">
-                <input type="text" placeholder="请输入手机号码">
-            </div>
+            <input type="text" class="login-phone" placeholder="请输入手机号码">
         </div>
         <div class="Login-main-pwd">
-            <input type="text" placeholder="请输入密码">
+            <input type="text" class="login-pwd" placeholder="请输入密码">
         </div>
-        <div class="Login-mian-btn">
-            <a href="#">
+        <div class="Login-mian-btn login-btn">
+            <a href="#/login" class="login-a">
                 登录
             </a>
         </div>
         <div class="Login-main-loginAndReg">
             <div class="Login-main-loginAndReg-left">
-                <a href="#">账号密码登录</a>
+                <a href="#/login" >账号密码登录</a>
             </div>
             <div class="Login-main-loginAndReg-right">
-                <a href="#">新用户注册</a>
+                <a  href="#/reg">新用户注册</a>
             </div>
         </div>
+      
     </section>
-</body>
-</html>
+    <div class="login-text-msg">
+        手机号码为11位
+    </div>
