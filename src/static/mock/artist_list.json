@@ -1,0 +1,68 @@
+{
+    "api": "mtop.damai.wireless.search.search.artistproject.get",
+    "data": {
+        "artistProjectList": [{
+            "artFans": "109.8w粉丝",
+            "artPic": "https://intercms.damai.cn/artist/pic/1535596053705/1535596053705-main.jpg",
+            "artistId": 2031,
+            "artistName": "周杰伦",
+            "citySet": ["泉州", "绍兴", "贵阳"]
+        }, {
+            "artFans": "32.0w粉丝",
+            "artPic": "https://intercms.damai.cn/artist/pic/1535596210529/1535596210529-main.jpg",
+            "artistId": 2048,
+            "artistName": "张学友",
+            "citySet": ["海口", "东京", "宁波", "安庆", "合肥", "苏州"]
+        }, { 
+            "artFans": "9.3w粉丝",
+            "artPic": "https://intercms.damai.cn/artist/pic/1534413364701/1534413364701-main.jpg",
+            "artistId": 71499,
+            "artistName": "EXO",
+            "citySet": ["釜山"]
+        }, {
+            "artFans": "8.8w粉丝",
+            "artPic": "https://intercms.damai.cn/artist/pic/1534413365298/1534413365298-main.jpg",
+            "artistId": 71493,
+            "artistName": "鹿晗",
+            "citySet": ["郑州", "深圳"]
+        }, {
+            "artFans": "8.1w粉丝",
+            "artPic": "https://intercms.damai.cn/artist/pic/1534413419149/1534413419149-main.jpg",
+            "artistId": 302,
+            "artistName": "李健",
+            "citySet": ["福州", "广州", "武汉"]
+        }, {
+            "artFans": "6.2w粉丝",
+            "artPic": "https://intercms.damai.cn/artist/pic/1534413404866/1534413404866-main.jpg",
+            "artistId": 1958,
+            "artistName": "王力宏",
+            "citySet": ["长沙", "珠海", "澳门", "广州", "中山", "佛山"]
+        }, {
+            "artFans": "6.0w粉丝",
+            "artPic": "https://intercms.damai.cn/artist/pic/1534413385953/1534413385953-main.jpg",
+            "artistId": 17267,
+            "artistName": "邓紫棋",
+            "citySet": ["广州", "中山"]
+        }, {
+            "artFans": "5.4w粉丝",
+            "artPic": "https://intercms.damai.cn/artist/pic/1534413359117/1534413359117-main.jpg",
+            "artistId": 71668,
+            "artistName": "赵雷",
+            "citySet": ["长沙"]
+        }, {
+            "artFans": "5.1w粉丝",
+            "artPic": "https://intercms.damai.cn/artist/pic/1534413395651/1534413395651-main.jpg",
+            "artistId": 2530,
+            "artistName": "张韶涵",
+            "citySet": ["西安", "重庆", "广州", "金华", "杭州", "深圳"]
+        }, {
+            "artFans": "4.4w粉丝",
+            "artPic": "https://intercms.damai.cn/artist/pic/1535596125762/1535596125762-main.jpg",
+            "artistId": 2032,
+            "artistName": "周柏豪",
+            "citySet": ["江门", "珠海"]
+        }]
+    },
+    "ret": ["SUCCESS::调用成功"],
+    "v": "1.0"
+}

@@ -1,7 +1,6 @@
 const proxy = require('http-proxy-middleware');
 
 const server_config = {
-    
     host: 'localhost',
     port: 8080,
     livereload:true,
