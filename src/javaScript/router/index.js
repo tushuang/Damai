@@ -1,56 +1,60 @@
 
 
+
 // 实现路由工具
 
-import routes from './route';
+import {  routes }  from './route'
+
 
 class Router {
 
-    constructor({initial}){
-        this.routes = routes,
-        this.initial = initial  || '#/index'
-    }
-    init(){
-        this.initialHash();
-        this.listenrHash();
+    constructor ({ initial }) {
+        
+        this.routes = routes; // 路由表
+        this.initial = initial || '#/index'; // 默认路由
+        // this.currentUrl = ''; // 记录当前的路径（hash值）
     }
 
-    initialHash(){
-        if(!location.hash){
-            location.hash = this.initial;
-        }
+    init () {
+        this.initialHash(); 
+        this.listenHashChange();
     }
 
-    refresh(){  //根据地址栏的hash值来渲染页面 
+    initialHash () { // 初始化hash值
+        // location.hash
+        if ( !location.hash ){
+            location.hash = this.initial
+        };
+        // this.currentUrl = location.hash;
+    }
+
+    switch (path) { // 切换路由的方法，方便在js事件等场景调用，需要切换模式的话在这里切换就ok
+        console.log("12323");
+        location.hash = path;
+    }
+
+    refresh () { // 根据当前的路径 来 切换路由
         let hash = location.hash;
-        if(!this.routes[hash]){
-            this.routes[this.initial].render();
+
+        if ( !this.routes[hash] ) { // 路由表里没有配置这个路由
+            // 回到默认路由
+            location.hash = this.initial;
+            return false;
         }
+
         this.routes[hash].render();
-        // this.switchStyle();
+        // this.switchTab();
     }
 
-    switchHash(hash){
-        location.hash = hash;
-    }
-    // //根据地址栏来渲染底部图标的颜色
-    // switchStyle(){
-    //     $('#footer span').each(function(){
-    //         let hash = $(this).attr('hash')
-    //         if ( hash == location.hash){
-    //             $(this).addClass('tap');
-    //         }else{
-    //             $(this).removeClass('tap');
-    //         }
 
-    //     })
-    // }
-
-    // 监听hash的变化
-    listenrHash () {
-        window.addEventListener('load', this.refresh.bind(this));  //页面加载完时 渲染一次
-        window.addEventListener('hashchange',this.refresh.bind(this));
+   
+    listenHashChange () { // 监听hash值变化的
+        window.addEventListener('load', this.refresh.bind(this));
+        // 当hash值变化的时候此事件会执行
+        window.addEventListener('hashchange', this.refresh.bind(this));
     }
+
 }
 
 export default Router;
+
