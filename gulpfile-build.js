@@ -4,6 +4,8 @@ const webpack = require('webpack-stream');
 const rev = require('gulp-rev');
 var revCollector = require('gulp-rev-collector');
 var gulpSequence = require('gulp-sequence');
+const autoprefixer = require('gulp-autoprefixer');
+const htmlmin = require('gulp-htmlmin');
 
 const config = require('./config/index_build');
 const {webpack_config,sass_config} = config;
@@ -13,6 +15,10 @@ gulp.task('copy:html',()=>{
     // return gulp.src('./src/**/*.html')
     //     .pipe(gulp.dest('./dist/'))
     return gulp.src(['./dist/rev/**/*.json', './src/**/*.html'])
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            collapseInlineTagWhitespace: true
+        }))
         .pipe( revCollector() )
         .pipe( gulp.dest('dist'))
 })
@@ -25,6 +31,10 @@ gulp.task('copy:static',()=>{
 gulp.task('compile:sass',()=>{
     return gulp.src('./src/stylesheets/**/*.scss')
            .pipe(sass(sass_config).on('error', sass.logError))
+           .pipe(autoprefixer({
+                browsers: ['last 2 versions'],
+                cascade: false
+            }))
            .pipe(rev())
            .pipe(gulp.dest('./dist/stylesheets'))
            .pipe(rev.manifest())
