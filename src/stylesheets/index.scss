@@ -53,36 +53,6 @@
         font-size: .64rem;
     }
 }
-// .more-nav_top{
-//     position: fixed;
-//     top: 1.333333rem;
-//     left: 0;
-//     width: 10rem;
-//     height: 1.386667rem;
-//     z-index: 999;
-//     display: none;
-//     ul{
-//         display:flex;
-//         justify-content: space-around;
-//         padding-left: .16rem;
-//         background: white;
-//         li{
-//             width: 25%;
-//             height: 1.386667rem;
-//             text-align: center;
-//             line-height: 1.38667rem;
-//             font-size: .37333rem;
-//             vertical-align: middle;
-//             i{
-//                 vertical-align: middle;
-//             }
-//         }
-//         li:nth-child(3){
-//             color: #ff1268;
-//         }
-//     }
-// }
-
 .more-nav_top {
     position: fixed;
     top: 1.333333rem;
@@ -329,26 +299,55 @@ main{
                     width: 9.52rem;
                     height: 3.226667rem;
                     display: flex;
-                    justify-content: space-around;
+                    // justify-content: space-around;
                     margin-bottom: 1.2rem;
+                    img{
+                        width: 2.426667rem;
+                        height: 3.226667rem;
+                    }
                     .more-list_detail{
                         display: flex;
                         flex-direction: column; 
                         padding-left: .32rem;
+                        justify-content: space-between;
                         h2{
                             font-size: .42667rem;
                             color: #111;
                             font-weight: 700;
                         }
+                        div.list-seat{
+                            height: .693333rem;
+                            line-height: .693333rem;
+                            span{
+                                display: inline-block;
+                                border: none;
+                                padding: .01333rem .08rem .04rem;
+                                font-size: .29333rem;
+                                line-height: normal;
+                                border-radius: .08rem .08rem .21333rem .08rem;
+                            }
+                            span:nth-child(1){
+                                background: #eee;
+                                color: #222;
+                            }
+                            span:nth-child(2){ 
+                                color: #ff1268;
+                                background: #fbe8ef;
+                            }
+                        }
                         .list-site{
                             font-size: .32rem;
                             color: #aaa;
                             margin-top: .16rem;
+                            width: 6.32rem;
+                            height: .413333rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
                         }
                         .list-price{
                             font-size: .37333rem;
                             color: #ff1268;
-                            margin-top: 1.2rem;
                         }
                     }
                 }
