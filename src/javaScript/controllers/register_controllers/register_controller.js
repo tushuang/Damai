@@ -8,7 +8,7 @@ const hander =()=>{
     var use = localStorage.getItem("user");//获得cookie中已经存在的用户信息
     var user = JSON.parse(use);//
     //处理注册的逻辑,验证手机格式和密码输入格式
-    $("#phone-num").on("click",()=>{
+    $("#phone-num").on("focus",()=>{
         $(".phone-num-line").css({"display":"block"});
     })
     $("#phone-num").on("blur",()=>{
@@ -27,7 +27,7 @@ const hander =()=>{
          }
     })
 
-    $("#phone-pwd").on("click",()=>{
+    $("#phone-pwd").on("focus",()=>{
         $(".phone-pwd-line").css({"display":"block"});
         $(".text-msg").css({"display":"block"})
         $(".text-msg").html("密码必须符合由数字,字母,至少其中两种组成，且长度不小于8，同时第一位不能为数字");
@@ -47,7 +47,7 @@ const hander =()=>{
     })
 
    
-    $(".reg-btn").on("click",()=>{
+    $(".reg-btn").on("touchstart",()=>{
         var phone =  $("#phone-num").val();
         var userlist = [];
         var usernumlist = [];
@@ -75,7 +75,6 @@ const hander =()=>{
                     pwd : pwd
                 }
                 userlist.push(obj);
-                // console.log(userlist);
                 localStorage.setItem("user",JSON.stringify(userlist));
             }else{
                 $(".text-msg").css({"display":"block"})

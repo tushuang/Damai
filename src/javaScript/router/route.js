@@ -14,11 +14,13 @@
 
 import login_controller from "../controllers/login_controllers/login_controller";
 import register_controller from "../controllers/register_controllers/register_controller";
-import index_contrller from "../controllers/index_controllers/header_controller";
+import index_controller from "../controllers/index_controllers/header_controller";
+import profile_controller from "../controllers/profile_controllers/profile_controllers";
 const routes = {
-    "#/index" : index_contrller,
+    "#/index" : index_controller,
     "#/login" : login_controller,
     "#/reg" : register_controller,
+    "#/profile" : profile_controller
 }
 
 export  {

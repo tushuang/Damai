@@ -29,7 +29,7 @@ class Router {
     }
 
     switch (path) { // 切换路由的方法，方便在js事件等场景调用，需要切换模式的话在这里切换就ok
-        console.log("12323");
+        // console.log("12323");
         location.hash = path;
     }
 

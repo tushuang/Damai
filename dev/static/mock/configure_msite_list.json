@@ -1,0 +1,54 @@
+{
+    "api": "mtop.damai.wireless.configure.msite.list",
+    "data": {
+        "bannerList": [{
+            "pic": "https://img.alicdn.com/tps/i4/TB1rdv.h5LaK1RjSZFxwu1mPFXa.png",
+            "schema": "https://h5.parsec.com.cn/dm-xy?pos=1&acm=2018091712.1003.2.4332504&scm=1003.2.2018091712.OTHER_1539616285973_4332504&utm=2M3aVq"
+        }],
+        "focusPicList": [{
+            "pic": "https://img.alicdn.com/tps/i4/TB1GdxCgNTpK1RjSZFKSuu2wXXa.jpg",
+            "schema": "https://p.damai.cn/wow/act/act/concert?pos=6&acm=2018091713-6.1003.2.4339123&scm=1003.2.2018091713-6.OTHER_1540835809067_4339123&utm=8vGOvM"
+        }, {
+            "pic": "https://img.alicdn.com/tps/i4/TB1tMArpCcqBKNjSZFgSut_kXXa.jpg",
+            "schema": "https://p.damai.cn/wow/act/act/modaotuan?pos=7&acm=2018091713-7.1003.2.4339098&scm=1003.2.2018091713-7.OTHER_1536954537917_4339098&utm=7Gstka"
+        }, {
+            "pic": "https://img.alicdn.com/tps/i4/TB10lVnDCtYBeNjSspkSuvU8VXa.jpg",
+            "schema": "https://p.damai.cn/wow/act/act/maidao8?pos=8&acm=2018091713-8.1003.2.4339094&usewindvane=1&scm=1003.2.2018091713-8.OTHER_1539480955194_4339094&utm=nmregS"
+        }],
+        "navigationList": [{
+            "pic": "https://img.alicdn.com/tps/i4/TB1p8sXdNYaK1RjSZFnwu180pXa.png",
+            "schema": "https://m.damai.cn/damai/category/index.html?pos=1&acm=2018091714.1003.2.4234071&scm=1003.2.2018091714.OTHER_1538769607718_4234071&categoryId=1&utm=fKRDL4",
+            "title": "演唱会"
+        }, {
+            "pic": "https://img.alicdn.com/tps/i4/TB1JgTUdNTpK1RjSZFGwu3HqFXa.png",
+            "schema": "https://m.damai.cn/damai/category/index.html?pos=2&acm=2018091714.1003.2.4234071&scm=1003.2.2018091714.OTHER_1536343506905_4234071&categoryId=3&utm=C1BRGr",
+            "title": "话剧歌剧"
+        }, {
+            "pic": "https://img.alicdn.com/tps/i4/TB1aWPUdFzqK1RjSZFCwu2bxVXa.png",
+            "schema": "https://m.damai.cn/damai/category/index.html?pos=3&acm=2018091714.1003.2.4234071&scm=1003.2.2018091714.OTHER_1536460860343_4234071&categoryId=2&utm=jBPxrj",
+            "title": "音乐会"
+        }, {
+            "pic": "https://img.alicdn.com/tps/i4/TB1V5vWdIbpK1RjSZFywu0_qFXa.png",
+            "schema": "https://x.damai.cn/markets/sport/app?pos=4&acm=2018091714.1003.2.4234071&scm=1003.2.2018091714.OTHER_1537351778739_4234071&utm=x2W4rd",
+            "title": "体育"
+        }, {
+            "pic": "https://img.alicdn.com/tps/i4/TB1nr7XdNjaK1RjSZFAwu2dLFXa.png",
+            "schema": "https://m.damai.cn/damai/category/index.html?pos=5&acm=2018091714.1003.2.4234071&scm=1003.2.2018091714.OTHER_1537237893190_4234071&categoryId=5&utm=CF3HtE",
+            "title": "曲苑杂坛"
+        }, {
+            "pic": "https://img.alicdn.com/tps/i4/TB114LUdNTpK1RjSZFGwu3HqFXa.png",
+            "schema": "https://m.damai.cn/damai/category/index.html?pos=6&acm=2018091714.1003.2.4234071&scm=1003.2.2018091714.OTHER_1535992407421_4234071&categoryId=100&utm=mzHpIq",
+            "title": "亲子"
+        }, {
+            "pic": "https://img.alicdn.com/tps/i4/TB1o.vTdFYqK1RjSZLewu2XppXa.png",
+            "schema": "https://m.damai.cn/damai/category/index.html?pos=7&acm=2018091714.1003.2.4234071&scm=1003.2.2018091714.OTHER_1537240322974_4234071&categoryId=7&utm=Ks19Xg",
+            "title": "展览休闲"
+        }, {
+            "pic": "https://img.alicdn.com/tps/i4/TB1AkBldMHqK1RjSZFPwu3wapXa.png",
+            "schema": "https://p.damai.cn/wow/act/act/damaiglobal?pos=8&acm=2018091714.1003.2.4234071&scm=1003.2.2018091714.OTHER_1538443853120_4234071&utm=LAhoKS",
+            "title": "境外"
+        }]
+    },
+    "ret": ["SUCCESS::调用成功"],
+    "v": "1.0"
+}
