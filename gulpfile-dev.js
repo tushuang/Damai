@@ -39,7 +39,7 @@ gulp.task('server',()=>{
 //监听文件更新
 gulp.task('watch',()=>{
     gulp.watch('./src/**/*.html',['copy:html'])
-    gulp.watch('./src/stylesheets/**/*.scss',['compile:sass'])
+    gulp.watch('./src/stylesheets/*.scss',['compile:sass'])
     gulp.watch('./src/javaScript/**/*.*',['compile:js']) //不管什么类型的文件夹变化都要 更新js 防止views更新 controller没有更新
     gulp.watch('./src/static/**/*.*',['copy:static'])
 

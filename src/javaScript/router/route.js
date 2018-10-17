@@ -11,7 +11,7 @@
 //     '#/content':content_controller
 // }
 
-
+import citySite_controller from '../controllers/citySite/citySite'
 import login_controller from "../controllers/login_controllers/login_controller";
 import register_controller from "../controllers/register_controllers/register_controller";
 import index_contrller from "../controllers/index_controllers/header_controller";
@@ -19,6 +19,7 @@ const routes = {
     "#/index" : index_contrller,
     "#/login" : login_controller,
     "#/reg" : register_controller,
+    '#/citySite':citySite_controller
 }
 
 export  {

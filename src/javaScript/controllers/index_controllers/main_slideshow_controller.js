@@ -5,7 +5,6 @@ import main_slideshow_model from '../../models/index_models/main_model'
 const render = async ()=>{
     let _template = Handlebars.compile(main_slideshow_view);
     const main_slideshow_data = await main_slideshow_model.configure_msite_list();
-    console.log(main_slideshow_data.data.focusPicList);
      let _html = _template({
          list:main_slideshow_data.data.focusPicList
      });

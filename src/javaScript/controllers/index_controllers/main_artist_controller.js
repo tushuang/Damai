@@ -28,7 +28,6 @@ const render = async ()=>{
         list:artist_list
     });
     await $('.artist-list').html(_html);
-    console.log(main_artist_data);
     var mySwiper = new Swiper ('.artist-list .swiper-container', {
         direction: 'horizontal', 
         freeMode:true,

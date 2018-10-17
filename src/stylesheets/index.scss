@@ -1,9 +1,18 @@
-
+@import './citySite.css';
 @import '../static/css/reset';
 @import '../static/fonts/iconfont';
 @import '../static/css/swiper.min';
-@import '../stylesheets/login.css';
-@import "../stylesheets/register.css";
+@import './login.css';
+@import "./register.css";
+
+em{
+    font-style: normal;
+}
+
+a{
+    color: #222;
+}
+ 
 #header{
     width: 10rem;
     height: 1.333333rem;
@@ -111,9 +120,19 @@
     border: .013333rem solid #e7e7e7;
     line-height: 1.33333rem;
     font-size: .32rem;
-    text-align: left
+    display: flex;
+    justify-content: space-between;
+    padding-right: .293333rem;
 }
-
+.more-nav_top ul.more-nav_ul li.more-nav_item div.list_container div.better-scroll_container ul li:nth-child(1){
+    color: #ff1268;
+}
+.more-nav_top ul.more-nav_ul li.more-nav_item div.list_container div.better-scroll_container ul li:nth-child(1) i{
+    display: block;
+}
+.more-nav_top ul.more-nav_ul li.more-nav_item div.list_container div.better-scroll_container ul li i{
+    display: none;
+}
 .more-nav_top ul.more-nav_ul li.more-nav_item i {
     vertical-align: middle
 }
@@ -125,10 +144,13 @@
 .more-nav_top ul.more-nav_ul li.more-nav_item:nth-child(2) div.list_container {
     left: -2.64rem
 }
-
+.warpper{
+    width: 100%;
+    height: 1.333333rem;
+}
 main{
     height: 17.786667rem;
-    margin-top: 1.333333rem;
+    // margin-top: 1.333333rem;
     section.main-slideshow{
         .swiper-container{
             width: 100%;
@@ -198,8 +220,11 @@ main{
         .artist-list{
             min-width: 10rem;
             height: 2.853333rem;
-            margin-left: .48rem;
             .swiper-container{
+                .swiper-wrapper{
+                    width: 62.933333rem;
+                    margin-left: 36px;
+                }
                 .swiper-wrapper .swiper-slide{
                     width: 6.026667rem;
                     height: 2.773333rem;
@@ -292,7 +317,9 @@ main{
             }
         }
         .more-list{
+            padding-bottom: 1.333333rem;
             ul{
+                overflow: hidden;
                 padding-left: .48rem;
                 padding-top: .213333rem;
                 li{
@@ -368,4 +395,29 @@ main{
     width: 1.28rem;
     height: 1.32rem;
     display: none;
+}
+
+.pullReflash{
+    height: 1.333333rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.333333rem;
+    background: #f5f5f5;
+    i{
+        font-size: .666667rem;
+        display: none;
+    }
+}
+
+@keyframes active{
+    from {transform: rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+@keyframes loading {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animate{
+    animation: loading 0.8s linear 0s infinite;
 }

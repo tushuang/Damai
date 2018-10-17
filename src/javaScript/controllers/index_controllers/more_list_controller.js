@@ -9,8 +9,7 @@ const render = async ()=>{
     let _html = _template({
         list:more_list_data.data.projectInfo
     });
-    await $('.more-list').html(_html);
-    console.log(more_list_data);
+    await $('.more-list ul').html($('.more-list ul').html() + _html);
 }
 
 export default {
