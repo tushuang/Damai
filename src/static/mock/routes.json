@@ -1,5 +1,6 @@
 {
     "/api/damai/configure_mite_list": "/configure_mist_list",
     "/api/damai/artist_list":"/artist_list",
-    "/api/damai/concert_list":"/concert_list"
+    "/api/damai/concert_list":"/concert_list",
+    "/api/damai/product_list" : "/product_list"
 }

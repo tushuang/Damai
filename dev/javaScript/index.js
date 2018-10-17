@@ -119,6 +119,17 @@ eval("function _defineProperties(target, props) {\n  for (var i = 0; i < props.l
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/defineProperty.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/defineProperty.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function _defineProperty(obj, key, value) {\n  if (key in obj) {\n    Object.defineProperty(obj, key, {\n      value: value,\n      enumerable: true,\n      configurable: true,\n      writable: true\n    });\n  } else {\n    obj[key] = value;\n  }\n\n  return obj;\n}\n\nmodule.exports = _defineProperty;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/defineProperty.js?");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime-module.js":
 /*!****************************************************************************************!*\
   !*** ./node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime-module.js ***!
@@ -248,6 +259,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vie
 
 /***/ }),
 
+/***/ "./src/javaScript/controllers/productList-controllers/productheader.js":
+/*!*****************************************************************************!*\
+  !*** ./src/javaScript/controllers/productList-controllers/productheader.js ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ \"./node_modules/@babel/runtime/helpers/defineProperty.js\");\n/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/@babel/runtime/helpers/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _views_productList_view_listheader_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../views/productList_view/listheader.html */ \"./src/javaScript/views/productList_view/listheader.html\");\n/* harmony import */ var _views_productList_view_listheader_html__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_views_productList_view_listheader_html__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _models_productList_models_listheader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../models/productList_models/listheader */ \"./src/javaScript/models/productList_models/listheader.js\");\n\n\n\n\n\n\nvar render = function render() {\n  //利用handelbars将字符串转化为可编译的函数\n  getList();\n};\n\nvar getList =\n/*#__PURE__*/\nfunction () {\n  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()(\n  /*#__PURE__*/\n  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {\n    var msg, _template, _html;\n\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            _context.next = 2;\n            return _models_productList_models_listheader__WEBPACK_IMPORTED_MODULE_4__[\"default\"].listheader();\n\n          case 2:\n            msg = _context.sent;\n            console.log(msg);\n            _template = Handlebars.compile(_views_productList_view_listheader_html__WEBPACK_IMPORTED_MODULE_3___default.a);\n            _html = _template(msg);\n            $(\".root\").html(_html);\n            hander();\n\n          case 8:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, this);\n  }));\n\n  return function getList() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\nvar hander = function hander() {\n  var _ref2;\n\n  var mySwiper = new Swiper(\".swiper2-container\", (_ref2 = {\n    autoplay: true,\n    loop: true\n  }, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(_ref2, \"autoplay\", true), _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(_ref2, \"pagination\", {\n    //分页器\n    el: \".swiper-pagination\"\n  }), _ref2));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/javaScript/controllers/productList-controllers/productheader.js?");
+
+/***/ }),
+
 /***/ "./src/javaScript/controllers/profile_controllers/profile_controllers.js":
 /*!*******************************************************************************!*\
   !*** ./src/javaScript/controllers/profile_controllers/profile_controllers.js ***!
@@ -296,6 +319,18 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar configure_msite_list = fu
 
 /***/ }),
 
+/***/ "./src/javaScript/models/productList_models/listheader.js":
+/*!****************************************************************!*\
+  !*** ./src/javaScript/models/productList_models/listheader.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar listheader = function listheader() {\n  return $.ajax({\n    url: \"api/damai/product_list\",\n    success: function success(res) {\n      return res;\n    }\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  listheader: listheader\n});\n\n//# sourceURL=webpack:///./src/javaScript/models/productList_models/listheader.js?");
+
+/***/ }),
+
 /***/ "./src/javaScript/router/index.js":
 /*!****************************************!*\
   !*** ./src/javaScript/router/index.js ***!
@@ -316,7 +351,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bab
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"routes\", function() { return routes; });\n/* harmony import */ var _controllers_login_controllers_login_controller__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../controllers/login_controllers/login_controller */ \"./src/javaScript/controllers/login_controllers/login_controller.js\");\n/* harmony import */ var _controllers_register_controllers_register_controller__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/register_controllers/register_controller */ \"./src/javaScript/controllers/register_controllers/register_controller.js\");\n/* harmony import */ var _controllers_index_controllers_header_controller__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/index_controllers/header_controller */ \"./src/javaScript/controllers/index_controllers/header_controller.js\");\n/* harmony import */ var _controllers_profile_controllers_profile_controllers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/profile_controllers/profile_controllers */ \"./src/javaScript/controllers/profile_controllers/profile_controllers.js\");\n//通过控制控制器的渲染函数 来控制页面的渲染\n//先引进不同的页面控制器\n// import find_controller from '../controllers/find_controller';\n// import mine_controller from '../controllers/mine_controller';\n// import content_controller from '../controllers/home_content_controller';\n// export default {    //每个文件只能有一个默认导出 \n//     '#/find':find_controller,\n//     '#/mine':mine_controller,\n//     '#/content':content_controller\n// }\n\n\n\n\nvar routes = {\n  \"#/index\": _controllers_index_controllers_header_controller__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  \"#/login\": _controllers_login_controllers_login_controller__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  \"#/reg\": _controllers_register_controllers_register_controller__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"#/profile\": _controllers_profile_controllers_profile_controllers__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n};\n\n\n//# sourceURL=webpack:///./src/javaScript/router/route.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"routes\", function() { return routes; });\n/* harmony import */ var _controllers_login_controllers_login_controller__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../controllers/login_controllers/login_controller */ \"./src/javaScript/controllers/login_controllers/login_controller.js\");\n/* harmony import */ var _controllers_register_controllers_register_controller__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/register_controllers/register_controller */ \"./src/javaScript/controllers/register_controllers/register_controller.js\");\n/* harmony import */ var _controllers_index_controllers_header_controller__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/index_controllers/header_controller */ \"./src/javaScript/controllers/index_controllers/header_controller.js\");\n/* harmony import */ var _controllers_profile_controllers_profile_controllers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/profile_controllers/profile_controllers */ \"./src/javaScript/controllers/profile_controllers/profile_controllers.js\");\n/* harmony import */ var _controllers_productList_controllers_productheader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../controllers/productList-controllers/productheader */ \"./src/javaScript/controllers/productList-controllers/productheader.js\");\n//通过控制控制器的渲染函数 来控制页面的渲染\n//先引进不同的页面控制器\n// import find_controller from '../controllers/find_controller';\n// import mine_controller from '../controllers/mine_controller';\n// import content_controller from '../controllers/home_content_controller';\n// export default {    //每个文件只能有一个默认导出 \n//     '#/find':find_controller,\n//     '#/mine':mine_controller,\n//     '#/content':content_controller\n// }\n\n\n\n\n\nvar routes = {\n  \"#/index\": _controllers_index_controllers_header_controller__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  \"#/login\": _controllers_login_controllers_login_controller__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  \"#/reg\": _controllers_register_controllers_register_controller__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"#/profile\": _controllers_profile_controllers_profile_controllers__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n  \"#/product\": _controllers_productList_controllers_productheader__WEBPACK_IMPORTED_MODULE_4__[\"default\"]\n};\n\n\n//# sourceURL=webpack:///./src/javaScript/router/route.js?");
 
 /***/ }),
 
@@ -394,6 +429,17 @@ eval("module.exports = \"<ul>    {{#each list}}        <li>            <img src=
 /***/ (function(module, exports) {
 
 eval("module.exports = \"    <header class=\\\"Login-header\\\">        <div class=\\\"Login-header-img\\\">                <a href=\\\"#/login\\\">                    <img src=\\\"//gw.alicdn.com/tfs/TB1bx8NXlfH8KJjy1XbXXbLdXXa-300-138.png\\\">                </a>        </div>    </header>    <section class=\\\"Login-main\\\">        <div class=\\\"Login-main-phone\\\">            <div class=\\\"Login-main-phone-left\\\">                +86                <i class=\\\"iconfont icon-jiantouxia jiantou-down\\\"></i>            </div>            <input type=\\\"text\\\" class=\\\"login-phone\\\" placeholder=\\\"请输入手机号码\\\">            <i class=\\\"phone-num-line\\\"></i>        </div>        <div class=\\\"Login-main-pwd\\\">            <input type=\\\"text\\\" class=\\\"login-pwd\\\" placeholder=\\\"请输入密码\\\">            <i class=\\\"phone-pwd-line\\\"></i>        </div>        <div class=\\\"Login-mian-btn login-btn\\\">            <a href=\\\"#/login\\\" class=\\\"login-a\\\">                登录            </a>        </div>        <div class=\\\"Login-main-loginAndReg\\\">            <div class=\\\"Login-main-loginAndReg-left\\\">                <a href=\\\"#/login\\\" >账号密码登录</a>            </div>            <div class=\\\"Login-main-loginAndReg-right\\\">                <a  href=\\\"#/reg\\\">新用户注册</a>            </div>        </div>          </section>    <div class=\\\"login-text-msg\\\">        手机号码为11位    </div>\"\n\n//# sourceURL=webpack:///./src/javaScript/views/login_view/login.html?");
+
+/***/ }),
+
+/***/ "./src/javaScript/views/productList_view/listheader.html":
+/*!***************************************************************!*\
+  !*** ./src/javaScript/views/productList_view/listheader.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div class=\\\"swiper-box\\\">      <div class=\\\"swiper-container swiper2-container\\\">            <div class=\\\"swiper-wrapper\\\">                  <div class=\\\"swiper-slide\\\">                        <img src=\\\"{{this.img.p1}}\\\">                   </div>                  <div class=\\\"swiper-slide\\\">                        <img src=\\\"{{this.img.p2}}\\\">                   </div>                  <div class=\\\"swiper-slide\\\">                        <img src=\\\"{{this.img.p3}}\\\">                   </div>                  <div class=\\\"swiper-slide\\\">                        <img src=\\\"{{this.img.p4}}\\\">                   </div>                  <div class=\\\"swiper-slide\\\">                        <img src=\\\"{{this.img.p5}}\\\">                   </div>            </div>            <div class=\\\"swiper-pagination\\\"></div>      </div>     </div>\"\n\n//# sourceURL=webpack:///./src/javaScript/views/productList_view/listheader.html?");
 
 /***/ }),
 
