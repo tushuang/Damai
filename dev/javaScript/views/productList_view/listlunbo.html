@@ -1,0 +1,18 @@
+<div class="productlist-box">
+    <div class="listlunbo-title">
+        最IN明星演出
+    </div>
+    <div class="listlunbo-main">
+       
+        <div class="listlunbo-main-box">
+                {{#each list}}
+            <div class="listlunbo-img">
+                <img src={{this.artPic}}>
+                <div class="attention">{{this.artFans}}关注</div>
+                <div class="name">{{this.artistName}}</div>
+                <div class="city">{{this.citySet}}</div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
