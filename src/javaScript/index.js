@@ -5,7 +5,7 @@ import Router from './router';
 
 // import info_changePage from './controllers/info_controllers/info_changePage';
 // import Router from './router/index';
-
+import load_controller from './controllers/load/load_controller'
 //调用render的渲染函数 
 load_controller.render()
 // info_changePage.render();
@@ -14,7 +14,4 @@ const router = new Router('#/index');
 window.router = router;    //将router设为全局变量 方便在其他文件里使用
 router.init();  
 
-window.onload =()=>{
-    $('.load').hide()
-    $('.root').show()
-}
+

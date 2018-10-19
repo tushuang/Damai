@@ -2,19 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"> 
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.5"> -->
-    <!-- <link rel="shortcut icon" href="http://www.xiu.com/favicon.ico" type="image/x-icon" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="shortcut icon" href="https://m.damai.cn/favicon.ico" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>大麦网</title>
     <link rel="stylesheet" href="stylesheets/index.css">
-</head>
+    <script src="static/javascript/zepto.min.js"></script>
+    <script>
+    window.onload = function () {
+        $('.load').hide() 
+        $('.root').show()
+    }
+    </script>
+</head> 
 <body>
-    <div class="load"></div>
+    <div class="load">
+        <div class="load-cover">
+
+            <div class="loading">
+                <i class="iconfont icon-huanyihuan"></i>
+                <span>数据加载中</span>
+            </div>
+          
+        </div>
+    </div>
    <div class="root"></div>
 </body>
 <script src="static/javascript/flexible.js"></script>
-<script src="static/javascript/zepto.min.js"></script>
+
 <script src="static/javascript/swiper.min.js"></script>
 <script src="static/javascript/handlebars-v4.0.12.js"></script>
 <script src="javaScript/index.js"></script>
+
 </html>
