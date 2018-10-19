@@ -2,7 +2,7 @@
 
 import listmain_template from "../../views/productList_view/listmain.html";
 import listmain_models from "../../models/productList_models/listheader";
-import better_scroll from "better-scroll";
+import BScroll from "better-scroll";
 const render = ()=>{
     getlist();
 }
@@ -13,9 +13,14 @@ const getlist =async ()=>{
     let _list = Handlebars.compile(listmain_template);
     let tmp = _list({list : listdata.data.currentCity});
     $(".product-main").html(tmp);
+    scroll();
 }
 
 const scroll = ()=>{
+    let bscroll = new BScroll(".better-scroll",{
+        // scrollY:true,
+        // click:true
+    });
 
 }
 export default {

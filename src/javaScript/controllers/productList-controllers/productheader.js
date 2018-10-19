@@ -24,7 +24,6 @@ const hander =()=>{
     let mySwiper = new Swiper(".swiper2-container",{
         autoplay : true,
         loop: true,
-        autoplay : true,
         pagination :{//分页器
             el : ".swiper-pagination"
         }
