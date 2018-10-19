@@ -8,7 +8,6 @@ const render = async ()=>{
     const main_artist_data = await main_artist_model.artist_list();
     let artist_list = main_artist_data.data.artistProjectList;
     let artist_site_list = [];
-    console.log(main_artist_data,$.each);
     $.each(artist_list,function(index,item){
         var _site_list = item.citySet;
         $.each(_site_list,function(i,n){

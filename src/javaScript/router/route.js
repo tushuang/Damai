@@ -17,6 +17,7 @@ import register_controller from "../controllers/register_controllers/register_co
 import index_contrller from "../controllers/index_controllers/header_controller";
 import info_controller from "../controllers/info_controllers/info_controller";
 import info_changePage from "../controllers/info_controllers/info_changePage";
+
 const routes = {
     "#/index" : index_contrller,
     "#/login" : login_controller,
@@ -24,8 +25,9 @@ const routes = {
     '#/citySite':citySite_controller,
     "#/info" : info_controller,
     "#/info_changePage" : info_changePage
+   
 }
-
+ 
 export  {
     routes
 }

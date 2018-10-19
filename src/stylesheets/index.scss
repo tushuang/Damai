@@ -4,7 +4,7 @@
 @import '../static/css/swiper.min';
 @import './login.css';
 @import "./register.css";
-
+@import './load.css';
 em{
     font-style: normal;
 }
@@ -52,6 +52,7 @@ a{
             font-size: .37333rem;
             padding-left: .96rem;
             border-radius: .373333rem;
+            outline: none;
         }
         i{
             font-size: .4rem;

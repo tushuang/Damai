@@ -2,12 +2,12 @@ import  main_controller from './main_controller'
 import  header_template from '../../views/index_view/header_view.html'
 import BScroll from 'better-scroll'
 import more_list_template from './more_list_controller'
-import { async } from 'rxjs/internal/scheduler/async';
+import load_controler from '../load/load_controller'
 
 const render = async ()=>{
-    $('.root').html(header_template);
+   
+    await $('.root').html(header_template);
     await main_controller.render();
-
     //不能用$选择器 
     const _scroll = new BScroll('.main',{
         probeType:2,

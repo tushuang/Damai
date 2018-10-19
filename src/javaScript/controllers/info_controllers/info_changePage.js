@@ -6,6 +6,7 @@
 import info_controlle from './info_controller';
 
 const render = ()=>{
+     
 
     $('.root').on('tap','.more-list ul li',function(){
     
