@@ -13,3 +13,5 @@ import Router from './router';
 const router = new Router('#/index');
 window.router = router;    //将router设为全局变量 方便在其他文件里使用
 router.init();  
+
+
