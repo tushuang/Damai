@@ -11,7 +11,9 @@ const render = async ()=> {
         list:main_nav_data.data.navigationList
     });
     await $('.main-nav').html(_html);
-    console.log( main_nav_data);
+    $('.main-nav ul li').on('tap',()=>{
+        location.hash = "#/product"
+    })
 }
 
 export default {
