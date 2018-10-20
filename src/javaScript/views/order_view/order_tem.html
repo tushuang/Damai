@@ -1,0 +1,32 @@
+<form action="">
+{{#each list}}
+<div class="orderlist_item">
+    <div class="order_item_title">
+        <div class="order_item_title_left">
+            <input type="checkbox" class="singly-check" />
+            <p>订单编号：<span>{{this.dd_id}}</span></p>
+        </div>
+        <div class="order_item_title_right disabled">
+            <p >删除订单</p>
+        </div>
+    </div>
+    <div class="order_item_box">
+        <div class="order_item_box-img">
+            <img src="{{this.dd_img}}" alt="">
+        </div>
+        <div class="order_item_box_words">
+            <div class="order_item_box_title">{{this.dd_name}}</div>
+            <div class="order_item_box_time">{{this.dd_showtime}}</div>
+            <div class="order_item_box_address">{{this.dd_city}}</div>
+            <div class="order_item_box_money">
+                <div class="order_item_left">{{this.dd_num}}张</div>
+                <div class="order_item_right">
+                    <span class="order_item__price">{{this.dd_money}}</span>
+                    <span class="order_item_freight">(含运费￥18.00)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+</form>
