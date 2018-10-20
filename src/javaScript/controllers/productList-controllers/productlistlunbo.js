@@ -13,16 +13,17 @@ const getlist = async ()=>{
     // console.log(listdata.data.artistProjectList)
     let _temp = _template({list : listdata.data.artistProjectList});
     $(".productlist-lunbo").html(_temp);
-    scroll();
+    swiper();
 }
-const scroll = ()=>{
-    let scroll = new BScorll(".swiper-container",{
-        // autoplay : true,
-        // loop: true,
-        // pagination :{//分页器
-        //     el : ".swiper-pagination"
-        // }
+const swiper = ()=>{
+     new Swiper(".listlunbo-main ",{
+        direction: 'horizontal',
+        freeMode:true,
+        slidesPerView :'auto',
+        spaceBetween:30,
+        loop:false
     })
+    
 }
 export default {
     render

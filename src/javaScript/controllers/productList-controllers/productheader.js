@@ -22,7 +22,11 @@ const getList = async()=>{
 }
 const hander =()=>{
     let mySwiper = new Swiper(".swiper2-container",{
-        autoplay : true,
+        autoplay : {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
         loop: true,
         pagination :{//分页器
             el : ".swiper-pagination"
