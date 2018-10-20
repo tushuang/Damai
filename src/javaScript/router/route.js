@@ -11,20 +11,27 @@
 //     '#/content':content_controller
 // }
 
-
+import citySite_controller from '../controllers/citySite/citySite'
 import login_controller from "../controllers/login_controllers/login_controller";
 import register_controller from "../controllers/register_controllers/register_controller";
 import index_controller from "../controllers/index_controllers/header_controller";
 import profile_controller from "../controllers/profile_controllers/profile_controllers";
 import prodcut_controller from "../controllers/productList-controllers/productheader";
+import info_controller from "../controllers/info_controllers/info_controller";
+import info_changePage from "../controllers/info_controllers/info_changePage";
+
 const routes = {
     "#/index" : index_controller,
     "#/login" : login_controller,
     "#/reg" : register_controller,
     "#/profile" : profile_controller,
-    "#/product" : prodcut_controller
+    "#/product" : prodcut_controller,
+    '#/citySite':citySite_controller,
+    "#/info" : info_controller,
+    "#/info_changePage" : info_changePage
+   
 }
-
+ 
 export  {
     routes
 }
