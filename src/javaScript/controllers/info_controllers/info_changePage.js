@@ -6,15 +6,13 @@
 import info_controlle from './info_controller';
 
 const render = ()=>{
-     
 
     $('.root').on('tap','.more-list ul li',function(){
     
         let pid = $(this).attr('pid');
-        router.switch("#/info_changePage");
-        console.log(location.hash);
-        info_controlle.render(pid);
-
+        localStorage.setItem('info_id',pid);
+        info_controlle.render();
+        router.switch("#/info");
     })
 
    

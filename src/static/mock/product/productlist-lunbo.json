@@ -43,6 +43,12 @@
             "artistId": 3212,
             "artistName": "放浪兄弟",
             "citySet": ["大阪", "东京", "名古屋", "福冈"]
+        },{
+            "artFans": 8067,
+            "artPic": "https://intercms.damai.cn/artist/pic/1534413390730/1534413390730-main.jpg",
+            "artistId": 10321,
+            "artistName": "Taylor Swift",
+            "citySet": ["墨尔本", "珀斯"]
         }]
     },
     "ret": ["SUCCESS::调用成功"],

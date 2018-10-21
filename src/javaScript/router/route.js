@@ -18,7 +18,7 @@ import index_controller from "../controllers/index_controllers/header_controller
 import profile_controller from "../controllers/profile_controllers/profile_controllers";
 import prodcut_controller from "../controllers/productList-controllers/productheader";
 import info_controller from "../controllers/info_controllers/info_controller";
-import info_changePage from "../controllers/info_controllers/info_changePage";
+import order_controller from "../controllers/order_controllers/order_controller";
 
 const routes = {
     "#/index" : index_controller,
@@ -28,7 +28,7 @@ const routes = {
     "#/product" : prodcut_controller,
     '#/citySite':citySite_controller,
     "#/info" : info_controller,
-    "#/info_changePage" : info_changePage
+    "#/order" : order_controller
    
 }
  
