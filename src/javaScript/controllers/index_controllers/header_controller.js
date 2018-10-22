@@ -212,7 +212,10 @@ const render = async ()=>{
         e.preventDefault?e.preventDefault():e.returnValue=false;
     }
     console.log($('.header-icon__site').children().eq(0).children().eq(1))
-    $('.header-icon__site').children().eq(0).children().eq(1).text(localStorage.getItem('site'))
+    if(localStorage.getItem("site")){
+        $('.header-icon__site').children().eq(0).children().eq(1).text(localStorage.getItem('site'))
+    }
+    
 
 }
   
