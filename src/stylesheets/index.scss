@@ -322,6 +322,9 @@ main{
                 li:nth-child(3){
                     color: #ff1268;
                 }
+                li:nth-child(4){
+                    color: #aaaaaa;
+                }
             }
         }
         .more-list{
@@ -428,4 +431,8 @@ main{
 
 .animate{
     animation: loading 0.8s linear 0s infinite;
+}
+
+.more-nav_ul li.more-nav_item:nth-child(4){
+    color: #aaa;
 }

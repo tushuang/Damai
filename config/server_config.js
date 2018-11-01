@@ -13,8 +13,15 @@ const server_config = {
             }
         }),
         proxy('/api',{  //mock自己写的数据 api是一个暗号 不会加到路径中
-            target: 'http://localhost:3000',
+            target: 'http://localhost:53000',
             changeOrigin: true
+        }),
+        proxy('/server',{  
+            target: 'http://localhost:3000',
+            changeOrigin: true,
+            pathRewrite: { 
+                '^/server': ''
+            }
         })
     ]
     

@@ -36,42 +36,49 @@ const render = async ()=>{
     
     //存储localstory
     $('.buy-button').on('tap',function(){
-        let ddid = $(this).find('h2').attr('ddid');
-        let ddpId = $('.pro-item_img img').attr('pid');
-        let ddNum = $('.buy-card_num input').attr('value');
-        let ddMonney = $('.buy-card_allprice h3').html();
 
-        let ddImg = $('.pro-item_img img').attr('src');
-        let ddCity= $('.pro-item_city').html() ;
-        let ddshowTime = $('.show-time').html();
-        let ddName = $('.pro-item_detail').html();
-
-
-        let ddObj = {
-            "dd_id":ddid,
-            "dd_pid":ddpId,
-            "dd_num":ddNum,
-            "dd_money":ddMonney,
-            "dd_img":ddImg,
-            "dd_city":ddCity,
-            "dd_showtime":ddshowTime,
-            "dd_name":ddName
-        };
-        let getlocal_dd = localStorage.getItem('dd_str');
-        if (!getlocal_dd) {
-            let ddArr = [];
-            ddArr.push(ddObj);
-            let ddStr = JSON.stringify(ddArr);
-            localStorage.setItem('dd_str',ddStr);
+        if(localStorage.getItem("loginuser")){
+            let ddid = $(this).find('h2').attr('ddid');
+            let ddpId = $('.pro-item_img img').attr('pid');
+            let ddNum = $('.buy-card_num input').attr('value');
+            let ddMonney = $('.buy-card_allprice h3').html();
+    
+            let ddImg = $('.pro-item_img img').attr('src');
+            let ddCity= $('.pro-item_city').html() ;
+            let ddshowTime = $('.show-time').html();
+            let ddName = $('.pro-item_detail').html();
+    
+    
+            let ddObj = {
+                "dd_id":ddid,
+                "dd_pid":ddpId,
+                "dd_num":ddNum,
+                "dd_money":ddMonney,
+                "dd_img":ddImg,
+                "dd_city":ddCity,
+                "dd_showtime":ddshowTime,
+                "dd_name":ddName
+            };
+            let getlocal_dd = localStorage.getItem('dd_str');
+            if (!getlocal_dd) {
+                let ddArr = [];
+                ddArr.push(ddObj);
+                let ddStr = JSON.stringify(ddArr);
+                localStorage.setItem('dd_str',ddStr);
+            }
+            else{
+                let arr = JSON.parse(getlocal_dd);
+                arr.unshift(ddObj);
+                let ddStr = JSON.stringify(arr);
+                localStorage.setItem('dd_str',ddStr);         
+            }
+            router.switch("#/order");
+        }else{
+            router.switch("#/login");
         }
-        else{
-            let arr = JSON.parse(getlocal_dd);
-            arr.unshift(ddObj);
-            let ddStr = JSON.stringify(arr);
-            localStorage.setItem('dd_str',ddStr);         
-        }
-        router.switch("#/order");
+       
     })      
+
 }
 
 export default {

@@ -1,27 +1,28 @@
 
-const configure_msite_list = () => {
+const configure_msite_list = () => {  //导航条
     return $.ajax({
         url:'/api/damai/configure_mite_list', //http:localhost:3000/damai
         success:(res)=>{
-            return res;  //请求到的数据
+            return res;  
         }
     })
 }
 
-const artist_list = ()=>{
+const artist_list = ()=>{  //艺人信息列表 
     return $.ajax({
         url:'/api/damai/artist_list',
         success:(res)=>{
-            return res;  //请求到的数据
+            return res;  
         }
     })
 }
-//  url: '/lagou/listmore.json?pageNo='+ pageNo +'&pageSize=15'
-const more_list = ()=>{
+
+const more_list = ()=>{  
     return $.ajax({
         url:'/api/damai/concert_list',
+        // url:'/server/show/list',
         success:(res)=>{
-            return res;  //请求到的数据
+            return res;  
         }
     })
 }

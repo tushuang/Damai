@@ -7,8 +7,18 @@ const render = ()=>{
 }
 const hander =()=>{
     $(".pro-order").on("tap",()=>{
-        router.switch("#/order");
+        if(localStorage.getItem("loginuser")){
+            router.switch("#/order");
+        }else{
+            $(".profile-back").css({"display":"block","background":"#ff1268","color":"#fff"});
+            $(".profile-back").html("请先登录");
+            $(".profile-back").on("tap",()=>{
+                router.switch("#/login")
+            })
+        }
     })
+
+
     $(".pro-login").on("tap",()=>{
         router.switch("#/login")
     })

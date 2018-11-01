@@ -9,7 +9,6 @@ const render = async ()=>{
         probeType:2
     })
     
-    
     $('li').on('tap',async function (){
         let _site = $(this).text();
         console.log($(this).text())

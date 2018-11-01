@@ -12,7 +12,11 @@ const render = async ()=>{
     var mySwiper = new Swiper ('.main-slideshow .swiper-container', {
         direction: 'horizontal', // 垂直切换选项
         loop: true, // 循环模式选项
-        autoplay:true,
+        autoplay : {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
         
         // 如果需要分页器
         pagination: {

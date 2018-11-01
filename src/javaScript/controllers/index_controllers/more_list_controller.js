@@ -8,7 +8,8 @@ const render = async ()=>{
     const _template = Handlebars.compile(more_list_template);
     const more_list_data = await more_list_model.more_list();
     let _html = _template({
-        list:more_list_data.data.projectInfo
+        list:more_list_data.data.projectInfo // mock
+        // list:more_list_data.data
     });
     await $('.more-list ul').html($('.more-list ul').html() + _html);
 

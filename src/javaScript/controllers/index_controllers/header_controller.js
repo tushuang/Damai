@@ -7,7 +7,17 @@ const render = async ()=>{
    
     await $('.root').html(header_template);
     await main_controller.render();
-    
+
+    if(window.AMap){
+        console.log('222')
+        onApiLoaded()
+    }//else{
+    //     let $script = $('<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=0e493cd8cc57299d4dbecd6d8649d880&callback=onApiLoaded&plugin=AMap.CitySearch">')
+    //     $('body').append($script)
+        
+    //     console.log('333')
+    // }
+
     //不能用$选择器 
     const _scroll = new BScroll('.main',{
         probeType:2,
@@ -211,11 +221,33 @@ const render = async ()=>{
        //阻止默认的鼠标滚轮事件
         e.preventDefault?e.preventDefault():e.returnValue=false;
     }
-    console.log($('.header-icon__site').children().eq(0).children().eq(1))
     $('.header-icon__site').children().eq(0).children().eq(1).text(localStorage.getItem('site'))
 
 }
   
+window.onApiLoaded = function () {
+    //获取用户所在城市信息
+    function showCityInfo() {
+        //实例化城市查询类
+        var citysearch = new AMap.CitySearch();
+        //自动获取用户IP，返回当前城市
+        citysearch.getLocalCity(function(status, result) {
+            if (status === 'complete' && result.info === 'OK') {
+                if (result && result.city && result.bounds) {
+                    var cityinfo = result.city;
+                    if(document.getElementById('info')){
+                        document.getElementById('info').innerHTML = cityinfo;
+                    }
+                    
+                }
+            } else {
+                document.getElementById('info').innerHTML = result.info;
+            }
+        });
+    }
+    showCityInfo();
+}
+
 export default {
     render
 }  
